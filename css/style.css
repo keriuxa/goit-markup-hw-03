@@ -210,6 +210,9 @@ body {
   background-color: #2f303a;
   width: 370px;
   height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .we-do-container {
@@ -277,6 +280,28 @@ body {
 .clients-items {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 94px;
+}
+
+/* ФУТТЕР */
+.footer {
+  background-color: #2f303a;
+}
+.footer-container {
+  display: flex;
+}
+
+.logo-footer {
+  margin-top: 60px;
+  margin-right: 147px;
+  margin-bottom: 20px;
+}
+
+.adress-list li:not(:last-child) {
+  margin-bottom: 9px;
+}
+.adress-list li:last-child {
+  margin-bottom: 60px;
 }
 .logo-web-footer {
   font-family: Raleway;
@@ -301,6 +326,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
+  font-style: normal;
 }
 .email-footer {
   font-weight: 400;
@@ -308,6 +334,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
 }
 .footer-title {
   font-weight: 700;
@@ -317,8 +344,14 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  margin-top: 72px;
 }
 
+.social-links-footer {
+  display: flex;
+}
+
+/* ПОРТФОЛИО */
 .btn-portfolio {
   font-weight: 400;
   font-size: 16px;
@@ -328,6 +361,24 @@ body {
   color: var(--main-text-color);
 }
 
+.portolio-buttons {
+  display: flex;
+  margin-top: 93px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.portolio-buttons li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.examples-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 94px;
+}
+.examples-list li:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
 .logo-web-portfolio {
   font-family: Raleway;
   font-weight: 700;
