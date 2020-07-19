@@ -203,6 +203,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  padding-top: 27px;
 }
 
 .we-do-items {
@@ -213,10 +214,31 @@ body {
 
 .we-do-container {
   display: flex;
+  margin-bottom: 94px;
 }
 
 .we-do-container li:not(:last-child) {
   margin-right: 30px;
+}
+
+/* Команда */
+
+.teamattes-item {
+  display: flex;
+  margin-bottom: 94px;
+}
+.teamattes-item li: {
+  margin-bottom: 0px;
+}
+.teamattes-item li:not(:last-child) {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.team .title {
+  padding-top: 94px;
+  padding-bottom: 50px;
+  margin: 0px;
 }
 .teammates {
   font-weight: 400;
@@ -225,6 +247,9 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  padding-top: 30px;
+  padding-bottom: 10px;
+  margin: 0;
 }
 .teammates-position {
   font-weight: 400;
@@ -233,6 +258,25 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+  margin: 0px;
+  padding-bottom: 16px;
+}
+.teamattes-social-links {
+  display: flex;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 24px;
+  justify-content: space-between;
+}
+
+/* Постоянные клиенты */
+.clients .container .title {
+  margin-bottom: 50px;
+}
+
+.clients-items {
+  display: flex;
+  justify-content: space-between;
 }
 .logo-web-footer {
   font-family: Raleway;
