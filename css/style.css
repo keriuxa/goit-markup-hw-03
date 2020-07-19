@@ -12,17 +12,17 @@ body {
   text-decoration-color: var(--main-text-color);
   background-color: white;
   list-style: none;
-  /*
-  background-color: #758080;
-*/
 }
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .link {
   text-decoration: none;
+  display: block;
 }
 
 .link:hover {
@@ -31,14 +31,29 @@ body {
 .link:focus {
   color: var(--acent-color);
 }
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ХЕДЕР */
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 .logo-studio {
   font-family: Raleway;
   font-weight: 700;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-
   color: var(--main-text-color);
+  margin-right: 85px;
 }
 
 .logo-web {
@@ -46,9 +61,9 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.9;
-
   color: var(--acent-color);
 }
+
 .header-items {
   font-weight: 400;
   font-size: 14px;
@@ -64,16 +79,40 @@ body {
   color: var(--secondary-text-color);
 }
 
-.navigation a {
+.header a {
   color: var(--main-text-color);
 }
 
-.navigation .list .contacts a {
+.header .list .contacts a {
   color: var(--secondary-text-color);
 }
-.navigation .list .contacts a:hover {
+.header .list .contacts a:hover {
   color: var(--acent-color);
 }
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-navigation {
+  display: flex;
+}
+
+.header-navigation .header-items:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* ГЕРОИ */
 .main-title {
   font-weight: 900;
   font-size: 44px;
@@ -82,6 +121,11 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  margin: 0;
+  padding-left: 452px;
+  padding-top: 200px;
+  padding-right: 452px;
+  padding-bottom: 30px;
 }
 .btn {
   background-color: var(--acent-color);
@@ -89,11 +133,24 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  text-align: center;
+  text-align: center; */
   letter-spacing: 0.06em;
+  width: 200px;
+  height: 50px;
+  margin-left: 700px;
 }
+
+.heroes {
+  background-color: coral;
+  width: 1600px;
+  height: 600px;
+  margin-bottom: 94px;
+}
+
+/* Чем мы занимаемся */
+
 .title-of-section {
   font-weight: 700;
   font-size: 14px;
@@ -101,6 +158,8 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-text-color);
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .text {
@@ -119,6 +178,23 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
+
+.advantages {
+  display: flex;
+  margin-bottom: 94px;
+}
+.advantages li:not(:last-child) {
+  margin-right: 30px;
+}
+.advantages li {
+  width: 270px;
+  height: 251px;
+}
+.advantages-ikon {
+  padding-left: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
 .what-we-do {
   font-weight: 700;
   font-size: 14px;
@@ -127,6 +203,20 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.we-do-items {
+  background-color: #2f303a;
+  width: 370px;
+  height: 70px;
+}
+
+.we-do-container {
+  display: flex;
+}
+
+.we-do-container li:not(:last-child) {
+  margin-right: 30px;
 }
 .teammates {
   font-weight: 400;
